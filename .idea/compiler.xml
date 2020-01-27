@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="chapter1" />
         <module name="study_springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="chapter1" target="1.8" />
       <module name="study_springboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chapter1" options="-parameters" />
       <module name="study_springboot" options="-parameters" />
     </option>
   </component>
