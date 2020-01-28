@@ -173,50 +173,50 @@ public class RedisController {
         return map;
     }
 
-    @ResponseBody
-    @RequestMapping("/multi")
-    public Map<String, Object> testMulti() {
-        redisTemplate.opsForValue().set("key1", "value1");
-        List list = (List) redisTemplate.execute((RedisOperations operations) -> {
-            operations.watch("key1");
-            operations.multi();
-            operations.opsForValue().set("key2", "value2");
-            Object value2 = operations.opsForValue().get("key2");
-            log.info("命令在队列，所以value为null【{}】", value2);
+//    @ResponseBody
+//    @RequestMapping("/multi")
+//    public Map<String, Object> testMulti() {
+//        redisTemplate.opsForValue().set("key1", "value1");
+//        List list = (List) redisTemplate.execute((RedisOperations operations) -> {
+//            operations.watch("key1");
+//            operations.multi();
+//            operations.opsForValue().set("key2", "value2");
+//            Object value2 = operations.opsForValue().get("key2");
+//            log.info("命令在队列，所以value为null【{}】", value2);
+//
+//            operations.opsForValue().set("key3", "value3");
+//            Object value3 = operations.opsForValue().get("key3");
+//            log.info("命令在队列，所以value为null【{}】", value3);
+//
+//            return operations.exec();
+//        });
+//
+//        log.info("multi list: {}", list);
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("success", true);
+//        return map;
+//    }
 
-            operations.opsForValue().set("key3", "value3");
-            Object value3 = operations.opsForValue().get("key3");
-            log.info("命令在队列，所以value为null【{}】", value3);
-
-            return operations.exec();
-        });
-
-        log.info("multi list: {}", list);
-        Map<String, Object> map = new HashMap<>();
-        map.put("success", true);
-        return map;
-    }
-
-    @RequestMapping("/pipeline")
-    @ResponseBody
-    public Map<String, Object> testPipeline() {
-        long start = System.currentTimeMillis();
-        List list = (List) redisTemplate.executePipelined((RedisOperations operations) -> {
-            for (int i = 1; i <= 100000; i++) {
-                operations.opsForValue().set("pipeline_" + i, "value_" + i);
-                String value = (String) operations.opsForValue().get("pipeline_" + i);
-                if (i == 100000) {
-                    System.out.println("命令只是进入队列，所以值为空【" + value + "】");
-                }
-            }
-            return null;
-        });
-        long end = System.currentTimeMillis();
-        System.out.println("耗时：" + (end - start) + "毫秒");
-        Map<String, Object> map = new HashMap<>();
-        map.put("sueccess", true);
-        return map;
-    }
+//    @RequestMapping("/pipeline")
+//    @ResponseBody
+//    public Map<String, Object> testPipeline() {
+//        long start = System.currentTimeMillis();
+//        List list = (List) redisTemplate.executePipelined((RedisOperations operations) -> {
+//            for (int i = 1; i <= 100000; i++) {
+//                operations.opsForValue().set("pipeline_" + i, "value_" + i);
+//                String value = (String) operations.opsForValue().get("pipeline_" + i);
+//                if (i == 100000) {
+//                    System.out.println("命令只是进入队列，所以值为空【" + value + "】");
+//                }
+//            }
+//            return null;
+//        });
+//        long end = System.currentTimeMillis();
+//        System.out.println("耗时：" + (end - start) + "毫秒");
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("sueccess", true);
+//        return map;
+//    }
 
     @ResponseBody
     @RequestMapping("/lua")
