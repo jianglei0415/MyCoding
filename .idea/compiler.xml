@@ -13,6 +13,7 @@
         <module name="chapter5" />
         <module name="chapter6" />
         <module name="chapter7" />
+        <module name="chapter8" />
         <module name="study_springboot" />
       </profile>
     </annotationProcessing>
@@ -24,6 +25,7 @@
       <module name="chapter5" target="1.8" />
       <module name="chapter6" target="1.8" />
       <module name="chapter7" target="1.8" />
+      <module name="chapter8" target="1.8" />
       <module name="study_springboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -36,6 +38,7 @@
       <module name="chapter5" options="-parameters" />
       <module name="chapter6" options="-parameters" />
       <module name="chapter7" options="-parameters" />
+      <module name="chapter8" options="-parameters" />
       <module name="study_springboot" options="-parameters" />
     </option>
   </component>
