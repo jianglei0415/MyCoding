@@ -4,6 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyCoding.iml" filepath="$PROJECT_DIR$/MyCoding.iml" />
       <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter1/chapter1.iml" filepath="$PROJECT_DIR$/study_springboot/chapter1/chapter1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/study_springboot/chapter2/chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter3/chapter3.iml" filepath="$PROJECT_DIR$/study_springboot/chapter3/chapter3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter4/chapter4.iml" filepath="$PROJECT_DIR$/study_springboot/chapter4/chapter4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter5/chapter5.iml" filepath="$PROJECT_DIR$/study_springboot/chapter5/chapter5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter6/chapter6.iml" filepath="$PROJECT_DIR$/study_springboot/chapter6/chapter6.iml" />
       <module fileurl="file://$PROJECT_DIR$/study_springboot/study_springboot.iml" filepath="$PROJECT_DIR$/study_springboot/study_springboot.iml" />
     </modules>
   </component>

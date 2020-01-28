@@ -5,6 +5,11 @@
       <list>
         <option value="$PROJECT_DIR$/study_springboot/pom.xml" />
         <option value="$PROJECT_DIR$/study_springboot/chapter1/pom.xml" />
+        <option value="$PROJECT_DIR$/study_springboot/chapter2/pom.xml" />
+        <option value="$PROJECT_DIR$/study_springboot/chapter3/pom.xml" />
+        <option value="$PROJECT_DIR$/study_springboot/chapter4/pom.xml" />
+        <option value="$PROJECT_DIR$/study_springboot/chapter5/pom.xml" />
+        <option value="$PROJECT_DIR$/study_springboot/chapter6/pom.xml" />
       </list>
     </option>
   </component>
