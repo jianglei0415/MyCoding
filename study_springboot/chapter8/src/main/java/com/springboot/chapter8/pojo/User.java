@@ -1,6 +1,8 @@
 package com.springboot.chapter8.pojo;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -13,15 +15,25 @@ import java.util.List;
  * @date: 2020/1/28 21:59
  */
 @Document
-@Data
+@ToString
 public class User implements Serializable {
     private static final long serialVersionUID = -1777455600461989259L;
 
     @Id
+    @Getter
+    @Setter
     private Long id;
 
     @Field("user_name")
-    private String userName=null;
-    private String note=null;
+    @Setter
+    @Getter
+    private String userName;
+
+    @Getter
+    @Setter
+    private String note;
+
+    @Getter
+    @Setter
     private List<Role> roles=null;
 }

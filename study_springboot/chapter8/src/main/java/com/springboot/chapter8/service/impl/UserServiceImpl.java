@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,12 +24,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void saveUser(User user) {
-
+        mongoTemplate.save(user, "user");
     }
 
     @Override
     public DeleteResult deleteUser(Long id) {
-        return null;
+        Criteria criteriaId = Criteria.where("id").is(id);
+        Query query = Query.query(criteriaId);
+        DeleteResult result = mongoTemplate.remove(query, User.class);
+        return result;
     }
 
     @Override
@@ -41,7 +45,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UpdateResult updateUser(Long id, String userName, String note) {
-        return null;
+        Criteria criteriaId=Criteria.where("id").is(id);
+        Query query = Query.query(criteriaId);
+        Update update = Update.update("userName", userName);
+        update.set("note",note);
+        UpdateResult result = mongoTemplate.updateFirst(query, update, User.class);
+//        UpdateResult result = mongoTemplate.updateMulti(query, update, User.class);
+        return result;
     }
 
     @Override
