@@ -1,0 +1,20 @@
+server:
+  port: 8908
+spring:
+  data:
+    mongodb:
+      host: localhost
+      password: jl19970415
+      port: 27017
+      database: springboot
+      username: root
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+logging:
+  level:
+    root: DEBUG
+    org:
+      springframework: DEBUG
