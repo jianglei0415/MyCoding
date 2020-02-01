@@ -1,0 +1,33 @@
+server:
+  port: 8912
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chapter?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&characterEncdoing=UTF-8&allowMultiQueries=true
+    username: root
+    password: jl19970415
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  security:
+    user:
+      name: root
+      password: aaa111
+logging:
+  level:
+    root: info
+    org:
+      springframework: debug
+      org:
+        mybatis: debug
+
+system:
+  user:
+    password:
+      secret: uvwxyz
+
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+  type-aliases-package: com.springboot.chapter12.pojo
