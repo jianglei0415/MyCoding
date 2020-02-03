@@ -3,6 +3,25 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyCoding.iml" filepath="$PROJECT_DIR$/MyCoding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter1/chapter1.iml" filepath="$PROJECT_DIR$/study_springboot/chapter1/chapter1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter10/chapter10.iml" filepath="$PROJECT_DIR$/study_springboot/chapter10/chapter10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter11/chapter11.iml" filepath="$PROJECT_DIR$/study_springboot/chapter11/chapter11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter12/chapter12.iml" filepath="$PROJECT_DIR$/study_springboot/chapter12/chapter12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter13/chapter13.iml" filepath="$PROJECT_DIR$/study_springboot/chapter13/chapter13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter14/chapter14.iml" filepath="$PROJECT_DIR$/study_springboot/chapter14/chapter14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter15/chapter15.iml" filepath="$PROJECT_DIR$/study_springboot/chapter15/chapter15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter16/chapter16.iml" filepath="$PROJECT_DIR$/study_springboot/chapter16/chapter16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter17/chapter17.iml" filepath="$PROJECT_DIR$/study_springboot/chapter17/chapter17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter17-product/chapter17-product.iml" filepath="$PROJECT_DIR$/study_springboot/chapter17-product/chapter17-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/study_springboot/chapter2/chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter3/chapter3.iml" filepath="$PROJECT_DIR$/study_springboot/chapter3/chapter3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter4/chapter4.iml" filepath="$PROJECT_DIR$/study_springboot/chapter4/chapter4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter5/chapter5.iml" filepath="$PROJECT_DIR$/study_springboot/chapter5/chapter5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter6/chapter6.iml" filepath="$PROJECT_DIR$/study_springboot/chapter6/chapter6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter7/chapter7.iml" filepath="$PROJECT_DIR$/study_springboot/chapter7/chapter7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter8/chapter8.iml" filepath="$PROJECT_DIR$/study_springboot/chapter8/chapter8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/chapter9/chapter9.iml" filepath="$PROJECT_DIR$/study_springboot/chapter9/chapter9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_springboot/study_springboot.iml" filepath="$PROJECT_DIR$/study_springboot/study_springboot.iml" />
     </modules>
   </component>
 </project>

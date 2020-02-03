@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chapter1" />
+        <module name="chapter10" />
+        <module name="chapter11" />
+        <module name="chapter12" />
+        <module name="chapter13" />
+        <module name="chapter14" />
+        <module name="chapter15" />
+        <module name="chapter16" />
+        <module name="chapter17" />
+        <module name="chapter17-product" />
+        <module name="chapter2" />
+        <module name="chapter3" />
+        <module name="chapter4" />
+        <module name="chapter5" />
+        <module name="chapter6" />
+        <module name="chapter7" />
+        <module name="chapter8" />
+        <module name="chapter9" />
+        <module name="study_springboot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter1" target="1.8" />
+      <module name="chapter10" target="1.8" />
+      <module name="chapter11" target="1.8" />
+      <module name="chapter12" target="1.8" />
+      <module name="chapter13" target="1.8" />
+      <module name="chapter14" target="1.8" />
+      <module name="chapter15" target="1.8" />
+      <module name="chapter16" target="1.8" />
+      <module name="chapter17" target="1.8" />
+      <module name="chapter17-product" target="1.8" />
+      <module name="chapter2" target="1.8" />
+      <module name="chapter3" target="1.8" />
+      <module name="chapter4" target="1.8" />
+      <module name="chapter5" target="1.8" />
+      <module name="chapter6" target="1.8" />
+      <module name="chapter7" target="1.8" />
+      <module name="chapter8" target="1.8" />
+      <module name="chapter9" target="1.8" />
+      <module name="study_springboot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chapter1" options="-parameters" />
+      <module name="chapter10" options="-parameters" />
+      <module name="chapter11" options="-parameters" />
+      <module name="chapter12" options="-parameters" />
+      <module name="chapter13" options="-parameters" />
+      <module name="chapter14" options="-parameters" />
+      <module name="chapter15" options="-parameters" />
+      <module name="chapter16" options="-parameters" />
+      <module name="chapter17" options="-parameters" />
+      <module name="chapter17-product" options="-parameters" />
+      <module name="chapter2" options="-parameters" />
+      <module name="chapter3" options="-parameters" />
+      <module name="chapter4" options="-parameters" />
+      <module name="chapter5" options="-parameters" />
+      <module name="chapter6" options="-parameters" />
+      <module name="chapter7" options="-parameters" />
+      <module name="chapter8" options="-parameters" />
+      <module name="chapter9" options="-parameters" />
+      <module name="study_springboot" options="-parameters" />
+    </option>
+  </component>
+</project>
