@@ -13,6 +13,7 @@
         <module name="chapter13" />
         <module name="chapter14" />
         <module name="chapter15" />
+        <module name="chapter16" />
         <module name="chapter2" />
         <module name="chapter3" />
         <module name="chapter4" />
@@ -32,6 +33,7 @@
       <module name="chapter13" target="1.8" />
       <module name="chapter14" target="1.8" />
       <module name="chapter15" target="1.8" />
+      <module name="chapter16" target="1.8" />
       <module name="chapter2" target="1.8" />
       <module name="chapter3" target="1.8" />
       <module name="chapter4" target="1.8" />
@@ -52,6 +54,7 @@
       <module name="chapter13" options="-parameters" />
       <module name="chapter14" options="-parameters" />
       <module name="chapter15" options="-parameters" />
+      <module name="chapter16" options="-parameters" />
       <module name="chapter2" options="-parameters" />
       <module name="chapter3" options="-parameters" />
       <module name="chapter4" options="-parameters" />
