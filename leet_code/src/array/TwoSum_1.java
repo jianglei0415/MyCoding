@@ -8,6 +8,8 @@ import java.util.Map;
  * @author: jianglei
  * @date: 2020/2/3 21:52
  * <p>
+ * 题号：#1 两数之和
+ * <p>
  * 给定一个整数数组 nums 和一个目标值 target，
  * 请你在该数组中找出和为目标值的那 两个 整数，
  * 并返回他们的数组下标。
@@ -18,7 +20,7 @@ import java.util.Map;
  * 因为 nums[0] + nums[1] = 2 + 7 = 9
  * 所以返回 [0, 1]
  */
-public class TwoSum {
+public class TwoSum_1 {
     //方法1：暴力法
     private static int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
