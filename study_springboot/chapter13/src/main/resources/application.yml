@@ -1,0 +1,52 @@
+server:
+  port: 8913
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chapter?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&characterEncdoing=UTF-8&allowMultiQueries=true
+    username: root
+    password: jl19970415
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+# activemq  activemq+jms
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    packages:
+      #信任所有
+      trust-all: true
+      #信任指定包
+      #trusted: com.springboot.chapter13.pojo,java.lang
+  jms:
+    template:
+      default-destination: activemq.default.destination
+    pub-sub-domain: true
+#rabbitmq amqp
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+  security:
+    user:
+      name: root
+      password: aaa111
+      roles: root
+rabbitmq:
+  queue:
+    msg: spring-boot-queue-msg
+    user: spring-boot-queue-user
+
+
+logging:
+  level:
+    root: info
+    org:
+      springframework: debug
+      org:
+        mybatis: debug
