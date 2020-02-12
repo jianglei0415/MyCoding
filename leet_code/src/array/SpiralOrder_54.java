@@ -33,13 +33,13 @@ import java.util.List;
 public class SpiralOrder_54 {
     private static List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<>();
-        if (matrix == null||matrix[0]==null) {
+        if (matrix == null || matrix.length == 0) {
             return result;
         }
         int m = matrix.length;
         int n = matrix[0].length;
-        int i = 0;
         int count = (Math.min(m, n) + 1) / 2;
+        int i = 0;
         while (i < count) {
             for (int j = i; j < n - i; j++) {
                 result.add(matrix[i][j]);
@@ -50,7 +50,7 @@ public class SpiralOrder_54 {
             for (int j = (n - 1) - (i + 1); j >= i && (m - 1 - i) != i; j--) {
                 result.add(matrix[m - 1 - i][j]);
             }
-            for (int j = (m - 1) - (i + 1); j > i && (n - i - i) != i; j--) {
+            for (int j = (m - 1) - (i + 1); j > i && (n - 1 - i) != i; j--) {
                 result.add(matrix[j][i]);
             }
             i++;
