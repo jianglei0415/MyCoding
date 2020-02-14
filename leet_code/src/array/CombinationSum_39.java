@@ -34,8 +34,7 @@ import java.util.*;
  * ]
  */
 public class CombinationSum_39 {
-    private static List<List<Integer>>
-    combinationSum(int[] candidates, int target) {
+    private static List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
         if (candidates == null) {
             return result;
