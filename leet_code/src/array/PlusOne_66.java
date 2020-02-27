@@ -32,7 +32,6 @@ public class PlusOne_66 {
             digits[i] = digits[i] % 10;
             if (digits[i] != 0) {
                 return digits;
-
             }
         }
         digits = new int[digits.length + 1];

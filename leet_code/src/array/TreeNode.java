@@ -5,11 +5,11 @@ package array;
  * @date: 2020/2/9 23:45
  */
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    private int val;
+    public TreeNode left;
+    public TreeNode right;
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
     }
 
