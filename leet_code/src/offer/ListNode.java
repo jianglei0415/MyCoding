@@ -5,10 +5,10 @@ package offer;
  * @date 2020/2/27 23:27
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    private int val;
+    public ListNode next;
 
-    ListNode(int x) {
+    public ListNode(int x) {
         val = x;
     }
 
