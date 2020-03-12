@@ -5,7 +5,7 @@ package array;
  * @date: 2020/2/9 23:45
  */
 public class TreeNode {
-    private int val;
+    public int val;
     public TreeNode left;
     public TreeNode right;
 
