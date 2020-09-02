@@ -15,56 +15,45 @@ package offer;
  */
 public class IsNumber_20 {
     private static boolean isNumber(String s) {
-        s = s.trim();
-        if(s.length() == 0) {
-            return false;
-        }
-        int i=0;
-
-        if(s.charAt(i)=='+'||s.charAt(i)=='-'){
-            i++;
-        }
-        if(i==s.length()) {
+        if (s == null || s.length() <= 0) {
             return false;
         }
 
-        int pointNum = 0;
-        int digitalNum = 0;
+        // 记录 e 和 E 是否存在
+        boolean isEExist = false;
+        // 记录 小数点 是否存在
+        boolean isDotExist = false;
+        // 记录 当前数字 是否合法
+        boolean numberic = false;
 
-        while(i<s.length() && (s.charAt(i)>='0' && s.charAt(i)<='9' || s.charAt(i)=='.')){
-            if(s.charAt(i)=='.'){
-                pointNum++;
-            }else{
-                digitalNum++;
-            }
-            i++;
-        }
-        if(pointNum > 1 || digitalNum < 1) {
-            return false;
-        }
-        if(i == s.length()) {
-            return true;
-        }
+        char[] chars = s.trim().toCharArray();
 
-        if(s.charAt(i)=='e'){
-            i++;
-            if(i == s.length()) {
-                return false;
-            }
-            if(s.charAt(i) == '+' || s.charAt(i) == '-'){
-                i++;
-                if(i == s.length()) {
+        for (int index = 0; index < chars.length; index++) {
+            char c = chars[index];
+            if (c >= '0' && c <= '9') {
+                numberic = true;
+            } else if (c == '+' || c == '-') {
+                // 符号只能出现在 首位 和 E/e紧接之后
+                if (index != 0 && chars[index - 1] != 'e' && chars[index - 1] != 'E') {
                     return false;
                 }
-            }
-            while(i<s.length()&&(s.charAt(i)>='0' && s.charAt(i)<='9')){
-                i++;
-            }
-            if(i == s.length()) {
-                return true;
+            } else if (c == '.') {
+                if (isEExist || isDotExist) {
+                    return false;
+                }
+                isDotExist = true;
+            } else if (c == 'E' || c == 'e') {
+                // E/e之前必须有数，且没出现过
+                if (isEExist || !numberic) {
+                    return false;
+                }
+                isEExist = true;
+                numberic = false;
+            } else {
+                return false;
             }
         }
-        return false;
+        return numberic;
     }
 
     public static void main(String[] args) {
