@@ -1,7 +1,5 @@
 package string;
 
-import java.util.Arrays;
-
 /**
  * @author jianglei
  * @date 2020/8/24 8:41
@@ -28,25 +26,22 @@ import java.util.Arrays;
  */
 public class RepeatedSubstringPattern_459 {
     public static boolean repeatedSubstringPattern(String s) {
-        return kmp(s);
-    }
-
-    private static boolean kmp(String s) {
-        int n = s.length();
-        int[] fail = new int[n];
-        Arrays.fill(fail, -1);
-        for (int i = 1; i < n; i++) {
-            int j = fail[i - 1];
-            while (j != -1 && s.charAt(j + 1) != s.charAt(i)) {
-                j = fail[j];
+        for (int i = 1; i * 2 <= s.length(); i++) {
+            boolean flag = true;
+            if (s.length() % i == 0) {
+                for (int j = i; j < s.length() - 1; j++) {
+                    if (s.charAt(i) != s.charAt(j - i)) {
+                        flag = false;
+                        break;
+                    }
+                }
             }
-            if (s.charAt(j + 1) == s.charAt(i)) {
-                fail[i] = j + 1;
+            if (flag) {
+                return true;
             }
         }
-        return fail[n - 1] != -1 && n % (n - fail[n - 1] - 1) == 0;
+        return false;
     }
-
 
     public static void main(String[] args) {
         String s_1 = "abab";
