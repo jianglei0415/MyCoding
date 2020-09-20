@@ -9,6 +9,17 @@ import java.util.List;
  * @date 2020/9/18 22:45
  * <p>
  * 题号：#47. 全排列 II
+ * <p>
+ * 给定一个可包含重复数字的序列，返回所有不重复的全排列。
+ * <p>
+ * 示例:
+ * 输入: [1,1,2]
+ * 输出:
+ * [
+ * [1,1,2],
+ * [1,2,1],
+ * [2,1,1]
+ * ]
  */
 public class PermuteUnique_47 {
     public static List<List<Integer>> permuteUnique(int[] nums) {

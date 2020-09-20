@@ -38,7 +38,7 @@ public class SolveNQueens_51 {
         List<List<String>> solutions = new ArrayList<>();
         int[] queens = new int[n];
         Arrays.fill(queens, -1);
-        Set<Integer> columns = new HashSet<>();
+        HashSet<Integer> columns = new HashSet<>();
         Set<Integer> diagonals1 = new HashSet<>();
         Set<Integer> diagonals2 = new HashSet<>();
         backtrack(solutions, queens, n, 0, columns, diagonals1, diagonals2);
