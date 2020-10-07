@@ -1,8 +1,6 @@
 package array;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author: jianglei
@@ -28,7 +26,7 @@ import java.util.Map;
  * 你能想出一个仅使用常数空间的一趟扫描算法吗？
  */
 public class SortColors_75 {
-    private static void sortColors(int[] nums) {
+    public static void sortColors(int[] nums) {
         if (nums == null) {
             return;
         }
@@ -57,9 +55,33 @@ public class SortColors_75 {
         }
     }
 
+    public static void sortColors2(int[] nums) {
+        int index0 = 0;
+        int index1 = 0;
+        int index2 = nums.length - 1;
+        int temp;
+
+        while (index1 <= index2) {
+            if (nums[index1] == 0) {
+                temp = nums[index0];
+                nums[index0] = nums[index1];
+                nums[index1] = temp;
+                index0++;
+                index1++;
+            } else if (nums[index1] == 2) {
+                temp = nums[index2];
+                nums[index2] = nums[index1];
+                nums[index1] = temp;
+                index2--;
+            } else {
+                index1++;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int[] nums = {2, 0, 2, 1, 1, 0};
-        sortColors(nums);
+        sortColors2(nums);
         System.out.println(Arrays.toString(nums));
     }
 }
