@@ -1,7 +1,5 @@
 package array;
 
-import java.util.Arrays;
-
 /**
  * @author: jianglei
  * @date: 2020/2/5 15:09

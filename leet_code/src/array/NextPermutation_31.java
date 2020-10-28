@@ -1,6 +1,5 @@
 package array;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
@@ -36,9 +35,9 @@ public class NextPermutation_31 {
                     Arrays.sort(nums, i, nums.length);
                     for (int j = i; j < nums.length; j++) {
                         if (nums[j] > nums[i - 1]) {
-                            nums[j] = nums[j] ^ nums[i - 1];
-                            nums[i - 1] = nums[j] ^ nums[i - 1];
-                            nums[j] = nums[j] ^ nums[i - 1];
+                            int temp = nums[j];
+                            nums[j] = nums[i - 1];
+                            nums[i - 1] = temp;
                             return nums;
                         }
                     }
